@@ -28,11 +28,11 @@ let getWeather = async function () {
       console.log(
         "Now what you were looking for? Here are some other options: "
       );
-      console.log(
-        results.map(function (result) {
-          return result.location.name;
-        })
-      );
+      const arrayWithCities = results.map(function (result) {
+        return result.location.name;
+      });
+      arrayWithCities.shift();
+      console.log(arrayWithCities);
     }
     getWeather();
   });
