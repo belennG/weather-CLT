@@ -32,7 +32,7 @@ let getWeather = async function () {
         return result.location.name;
       });
       arrayWithCities.shift();
-      console.log(arrayWithCities);
+      console.log(arrayWithCities.join("\n"));
     }
     getWeather();
   });
@@ -53,7 +53,7 @@ function weatherEmoji(skyText) {
   if (skyText == "Sunny") {
     return emoji.get("sunny");
   }
-  if (skyText == "Rainy") {
+  if (skyText == "Rain") {
     return emoji.get("rain_cloud");
   }
   if (skyText == "Snow") {
@@ -64,5 +64,19 @@ function weatherEmoji(skyText) {
   }
   if (skyText == "Clear") {
     return emoji.get("full_moon");
+  }
+  if (skyText == "Mostly Sunny") {
+    return emoji.get("mostly_sunny");
+  }
+  if (skyText == "Partly Cloudy") {
+    return emoji.get("sun_behind_cloud");
+  }
+  if (skyText == "Rain Showers") {
+    return emoji.get("rain_cloud");
+  }
+  if (skyText == "Light Snow") {
+    return emoji.get("snow_cloud");
+  } else {
+    return emoji.get("snow_cloud");
   }
 }
