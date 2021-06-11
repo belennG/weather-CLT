@@ -23,6 +23,7 @@
     "node-emoji": "^1.10.0",
     "prompt-promise": "^1.0.3",
     "weather-js": "^2.0.0",
-    "wikipedia": "^1.0.6"
+    "wikipedia": "^1.0.6",
+    "yourmama": "^1.0.4"
   }
 }
